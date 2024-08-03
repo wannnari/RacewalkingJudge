@@ -1,0 +1,92 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding:5% 0%;
+}
+
+button#go,button#tableReset{
+    font-size:200%;
+    display: flex;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+button#tableReset{
+    color: #fff;
+    background-color:brown;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 40%;
+    z-index: 1;
+    background-color: aliceblue;
+}
+
+.modal-content{
+    margin: 0% 5%;
+    width: 100%;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity:1}
+}
+
+.modal-header{
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body{
+    width: 80%;
+    padding: 10px 20px;
+    color: black;
+}
+
+
+.paddle{
+    width: 20%;
+    height: 50%;
+}
+
+button#no{
+    width:50%;
+    font-size: 200%;
+}
+
+#modalClose{
+    font-size: 2rem;
+}
+
+#modalClose:hover{
+    cursor: pointer;
+}
+
+#title{
+    font-size:150%;
+}
+
+input#reloadBtn{
+    font-size:150%;
+    background-color:crimson;
+    color:#fff;
+    margin:1rem 1rem 1rem 2rem; 
+}
+
+
+button#fixMode{
+    font-size:150%;
+    background-color: darkgray;
+    color:aqua;
+    margin:1rem 1rem 1rem 1rem;
+}

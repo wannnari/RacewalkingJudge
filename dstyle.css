@@ -1,0 +1,168 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+h1,h2{
+    color: aliceblue;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding:5% 0%;
+}
+
+#go_group1{
+    size:100px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 40%;
+    z-index: 1;
+    overflow: auto;
+    background-color: aliceblue;
+}
+
+.modal-content{
+    margin: 0% 5%;
+    width: 100%;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity:1}
+}
+
+.modal-header{
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body{
+    width: 80%;
+    padding: 10px 20px;
+    color: black;
+}
+
+
+.paddle{
+    width: 20%;
+    height: 50%;
+}
+
+button#no{
+    width:50%;
+    height: 10%;
+    font-size: 200%;
+    padding:5% 5%;
+}
+
+#modalClose{
+    font-size: 2rem;
+}
+
+#modalClose:hover{
+    cursor: pointer;
+}
+
+#title{
+    font-size:150%;
+}
+
+table.csv_list{
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table.csv_list th{
+    border:1px solid #000066;
+}
+
+
+
+#yellow{
+    background-color: yellow;
+}
+
+#red{
+    background-color: red;
+}
+
+table.csv_list th{
+    background-color: #6fb7f5;
+}
+
+table.csv_list td{
+    border:1px solid #000066;
+    background-color: #ffffff;
+}
+
+table tr:nth-child(odd) td{
+    border:1px solid #000066;
+    background-color: rgb(176, 215, 247);
+}
+
+table thead.judgeNo{
+    background-color: #ffffff;
+}
+
+th{
+    width: 10%;
+}
+
+th#red,th#yellow,th#no{
+    width:5%;
+}
+
+th#ord{
+    width:3%;
+}
+
+td{
+    font-size: 200%;
+}
+td.textcenter{
+    text-align: center;
+}
+
+#inputNum{
+    line-height: 2;
+    font-size:150%;
+}
+
+#submitNum{
+    font-size:160%;
+    border-radius: 100vh;
+    padding: 1rem 4rem;
+    background-color: #f56500;
+    color:#fff;
+}
+
+input.NoBtn{
+    font-size:130%;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    background-color: blue;
+
+}
+
+input#reloadBtn{
+    font-size:150%;
+    background-color:crimson;
+    color:#fff;
+    margin:1rem 1rem 1rem 2rem; 
+}
+
+
+button#judgeMode{
+    font-size:150%;
+    background-color: white;
+    color:black;
+}
